@@ -1,0 +1,61 @@
+Questions
+
+1. What is the difference between HTTP and HTTPS?
+
+ 	HTTP, hypertext transfer protocol, is the way that server communicates with the browser. A user makes a request and gets a response.  It's what allows a person to view a website and send information back to the web server. 
+	HTTPS, hypertext transfer protocol secure, is basically identical to HTTP in the way it functions, regarding making a request and getting a response. However, the main difference is that HTTPS is secure, so the data sent over the internet is encrypted. 
+
+
+2. What is the difference between HTTP GET and POST?
+
+	A HTTP GET request literally gets you data. It retrieves information. Whereas a HTTP POST request creates new infortmation by interacting with the server. A HTTP POST would be used in form submissions or uploading a file.
+
+
+3. What is the difference between the HTTP 2xx status codes and 4xx status codes?
+	
+	The HTTP 2xx status codes indicates success. The request was made, recieved, and processed with out any errors, where as the 4xx status codes indicate something went wrong and there is an error. An error could occur for a number of reasons such as the request was bad, the page does not exist, or you aren't authorized to access that page.
+
+
+4. What is ajax (conceptually, what does it do)? Describe a situation where it is useful.
+
+	Ajax basically enables a webpage or application to dynamically change its content without refreshing the page. A situation in which it is useful is e-mail. I don't want to constantly refresh gmail to see if I recieved any new e-mails. It should (and does) automatically show new e-mails as they are recieved. 
+
+5. What is responsive design?
+
+	Responsive design is a design method that ensures a website looks good no matter what device it is veiwed on. It is typically based on a grid system so the design seamlessly transforms to the users device.
+
+6. What is the difference between these 3 CSS rules?
+
+div {background:#fff;}   will make the background of every div white
+
+#div {background:#fff;}  will make the background of the object that has the id 'div' white 
+
+.div {background:#fff;}  will make the background of every object that has the class 'div' white 
+
+7. What is the difference between these 2 uses of the <script> tag?
+
+<script src=”http://example.com/whatever.js”></script>
+
+The script above is an external script tag. It is most commonly used to link the Javascript to the HTML.
+
+<script>var whatever = true</script>
+
+The script tag above is an internal script tag. It is written directly into the HTML document. You can specify whether it should run automatically or with an event handler. In this case it will run when var whatever is true.
+
+8. What is the difference between these two javascript snippets?
+
+
+var x = function() {
+
+return 1+1;
+
+}();
+
+var y = function() {
+
+return 1+1;
+
+};
+
+	I'm not certain but I believe the first function (var x) is self- invoking, so it will run automatically, where as the second function (var y) needs to be called in order to execute. 
+
