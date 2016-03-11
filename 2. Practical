@@ -1,5 +1,3 @@
-Practical
-
 1. Write HTML/CSS to draw the following scene (inline css is fine if you want):
 
 a. One red box, 200x200 pixels
@@ -11,6 +9,9 @@ c. One green box, 100x100 pixels
 d. The green box should be centered inside the red box
 
 e. The red and blue boxes should not overlap
+
+Please check out the "Box Question" for the answer
+
 
 2. You have started an analytics company with the domain “hashtag­analytics.com”. You
 
@@ -24,17 +25,27 @@ As it stands, this pixel has a problem because it will be cached by the browser.
 
 a. Why is caching a problem for the analytics company?
 
+	Caching is a problem for an analytics company because caching is typically when your browser saves information in RAM. So rather than accessing the server the your browser will pull the files from its memeory. Therefore you would not get a correct read of how many visitors your site gets. 
+
 b. How could you prevent browser caching? (use any technique(s) you want)
+
+	You can include a meta tag in the HTML documant to prevent caching. 
 
 c. What will happen if the customer’s website is served over HTTPS? How could you
 
 modify the tracking pixel to fix that?
 
+	I'm not entirely sure about this but I think you would only need to change the tracking pixel so it is also served over HTTPS, so it would be <img src=”https://hashtag­analytics.com/12345/pixel.gif” width=”1” height=”1”/>.
+
+
 d. List some information the tracking company could collect (ex: IP address)
+
+	The tracking company could track visitor date and time, locaton, if a visitor made a purchase (if it is a shopping site). It could also track how the user got to the site (ie from a blog or facebook ad)
 
 e. List some additional information (if any) that could be collected if a <script> tag is used
 
 instead of an <img> tag.
+
 
 3. Harder!
 
@@ -54,6 +65,24 @@ Every 2 seconds:
 
 ­ If no, do nothing
 
-** the image is “viewable” if any part of it appears on the screen (so if the image is entirely above or below the
+** the image is “viewable” if any part of it appears on the screen (so if the image is entirely above or below the viewport, then the user cannot see it, so it is not considered “viewable”). You can ignore horizontal bounds checking.
 
-viewport, then the user cannot see it, so it is not considered “viewable”). You can ignore horizontal bounds checking.
+
+// I am a fan of jQuery so I knew I wanted to use that for this question. However, I was unsure of how to check for viewability. I simply googled "jQuery visibility" and discovered ":visible." I read up on it on the jQuery site and decided that I would use it. I do think the only issue with using :visible is that it does take into account CSS so it could be considered visible even if it's hidden behind something else and the user can't see it. 
+
+<img id=”myimage” src=”http://hashtag­analytics.com/myimage.jpg” width=”300” height=”250”/>
+
+<script>
+
+window.setInterval(function(){
+ checkViewable();
+}, 2000);
+
+var checkViewable = function() {
+	if ($('#myimage').is(':visible')) {
+  	console.log("viewable");
+	} else {
+	}
+}
+
+</script>
