@@ -10,7 +10,7 @@ d. The green box should be centered inside the red box
 
 e. The red and blue boxes should not overlap
 
-Please check out the "Box Question" for the answer
+	Please check out the "Box Question" for the answer
 
 
 2. You have started an analytics company with the domain “hashtag­analytics.com”. You
@@ -25,7 +25,7 @@ As it stands, this pixel has a problem because it will be cached by the browser.
 
 a. Why is caching a problem for the analytics company?
 
-	Caching is a problem for an analytics company because caching is typically when your browser saves information in RAM. So rather than accessing the server the your browser will pull the files from its memeory. Therefore you would not get a correct read of how many visitors your site gets. 
+	Caching is a problem for an analytics company because caching is when your browser saves information in RAM.So rather than accessing the server to retrieve data, your browser will pull the files from its memeory. Therefore you would not get a correct read of how many visitors your site gets. 
 
 b. How could you prevent browser caching? (use any technique(s) you want)
 
@@ -79,7 +79,7 @@ window.setInterval(function(){
 }, 2000);
 
 var checkViewable = function() {
-	if ($('#myimage').is(':visible')) {
+	if ($('#myimage').is(':visible') === true) {
   	console.log("viewable");
 	} else {
 	}

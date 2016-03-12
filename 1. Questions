@@ -8,12 +8,12 @@ Questions
 
 2. What is the difference between HTTP GET and POST?
 
-	A HTTP GET request literally gets you data. It retrieves information. Whereas a HTTP POST request creates new infortmation by interacting with the server. A HTTP POST would be used in form submissions or uploading a file.
+	A HTTP GET request literally gets you data. It retrieves information. Whereas a HTTP POST request creates new information by interacting with the server. A HTTP POST would be used in form submissions or uploading a file.
 
 
 3. What is the difference between the HTTP 2xx status codes and 4xx status codes?
 	
-	The HTTP 2xx status codes indicates success. The request was made, recieved, and processed with out any errors, where as the 4xx status codes indicate something went wrong and there is an error. An error could occur for a number of reasons such as the request was bad, the page does not exist, or you aren't authorized to access that page.
+	The HTTP 2xx status codes indicates success. The request was made, recieved, and processed without any errors, where as the 4xx status codes indicate something went wrong and there is an error. An error could occur for a number of reasons such as the request was bad, the page does not exist, or you aren't authorized to access that page.
 
 
 4. What is ajax (conceptually, what does it do)? Describe a situation where it is useful.
@@ -22,7 +22,7 @@ Questions
 
 5. What is responsive design?
 
-	Responsive design is a design method that ensures a website looks good no matter what device it is veiwed on. It is typically based on a grid system so the design seamlessly transforms to the users device.
+	Responsive design is a design method that ensures a website looks good no matter what device it is veiwed on. It is typically based on a grid system so the design seamlessly transforms based on the device that a user is using (ie. ipad vs. laptop vs. iphone).
 
 6. What is the difference between these 3 CSS rules?
 
@@ -57,5 +57,5 @@ return 1+1;
 
 };
 
-	I'm not certain but I believe the first function (var x) is self- invoking, so it will run automatically, where as the second function (var y) needs to be called in order to execute. 
+	I'm not certain but I believe the first function (var x) is self-invoking, so it will run automatically, whereas the second function (var y) needs to be called in order to execute. 
 
